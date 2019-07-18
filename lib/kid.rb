@@ -4,7 +4,9 @@ require_relative 'fancy_dance.rb'
 
 class Kid
 
-  attr_accessor :name
+  def initialize(name)
+    @name = name
+  end
   include Dance
   extend MetaDancing
   extend FancyDance::ClassMethods
